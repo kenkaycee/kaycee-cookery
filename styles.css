@@ -1,17 +1,18 @@
-*{
-    margin:0;
-    padding: 0;
-}
+
 body{
     font-family: Arial, Helvetica, sans-serif;
     font-size: 16px;
     color: #333;
+    margin: 0px;
+    padding: 0px;
 }
+
 .container{
     margin: 0 auto;
     padding: 0 25px;
     max-width: 1000px;
 }
+
 
 .navbar{
     background: #1f2937;
@@ -27,6 +28,9 @@ body{
     color: #f9faf8;
     font-size: 18px;
 }
+a:hover{
+    color: red;
+}
 .navbar .container{
     display: flex;
     justify-content: space-between;
@@ -40,7 +44,9 @@ body{
 }
 .header{
     background: #1f2937;
-    height:300px;
+    height:100%;
+    margin-bottom: 30px;
+    
 }
 .header .welcome{
     margin-bottom: 7px;
@@ -73,8 +79,123 @@ body{
     color: #f9faf8;
     align-items: center;
     justify-content: center;
-    height: 200px;
-    width: 300px;
-    padding: 20px;
     margin-left: 100px;
+    margin-top: 50px;
+    height: auto;
+    
 }
+.header img{
+    height: 280px;
+    max-width: 400px;
+    border-color: #3882f6;
+    border-radius: 10px;
+    border: solid;
+}
+
+
+.food-section{
+    background: #fff;
+    margin-top: 20px;
+}
+
+.food-section img{
+    height: 200px;
+    max-width: 200px;
+    border-radius: 10px;
+}
+h1{
+    margin: 30px 0;
+    text-align: center;
+    font-weight: bold;
+}    
+
+.food-images{
+    display: flex;
+    gap: 30px;
+    justify-content: space-around;
+    flex-flow: row wrap;
+
+}
+.food {
+    max-width: 150px;
+    color: black;
+    transition:ease-in .7s;
+}
+
+.food:hover {
+    color: red;
+}
+.food-section p{
+    text-align: center;
+}
+.quote .container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #E5E7EB;
+    padding:10px 20px ;
+    margin-bottom: 50px;
+}
+.quote .quote-text {
+    font-size: 36px;
+    font-weight: 100;
+    color: #1f2937;
+}
+
+.quote .author {
+    align-self: flex-end;
+    font-weight: bolder;
+    font-size: 24px;
+    color: #1f2937;
+}
+
+
+
+
+.info{
+    background: #f9faf8;
+    margin-bottom: 50px;
+}
+.info .container{
+    background: #3882f6;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    padding:10px 50px;
+}
+.info button{
+    background: #3882f6;
+    color:#fff;
+    border: 1px solid #fff;
+    padding:5px;
+    border-radius: 10px;
+}
+.footer{
+    text-align: center;
+    background: #1f2937;
+    padding: 10px 0;
+    color:#e5e7eb;
+    margin-top: 50px;
+}
+
+@media (max-width: 500px) {
+    .header .container {
+      flex-direction: column;
+      padding-top: 20px;
+      text-align: center;
+    }
+  
+    .quote .container {
+      display: block;
+      text-align: center;
+    }
+  
+   
+    
+   .info .container {
+      flex-direction: column;
+      padding-top: 20px;
+      text-align: center;
+    }
+  }
